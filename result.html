@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID CARD</title>
+    <script type="text/Javascript" src="JsBarcode.all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div">
+            <div class="boxid">
+                <div class="card">
+                        <img src="banner.png" width="100%">
+                        <div id="content">
+                            <table>
+                                <tr>
+                                    <th class="S">Name</th>
+                                    <th id="0" style="text-transform: uppercase; color: tomato; font-weight: 700;"></th>
+                                </tr>
+                                <tr>
+                                    <td class="S">ID No.</td>
+                                    <td id="1" style="text-transform: uppercase;"></td>
+                                </tr>
+                                <tr >
+                                    <td class="S">Father's Name</td>
+                                    <td id="2" style="text-transform: uppercase;"></td>
+                                </tr>
+                                <tr >
+                                    <td class="S">Branch</td>
+                                    <td id="9" style="text-transform: uppercase;"></td>
+                                </tr>
+                                <tr >
+                                    <td class="S" >Programme</td>
+                                    <td id="11" style="text-transform: uppercase;"></td>
+                                </tr>
+                                <tr >
+                                    <td class="S" >D.O.B</td>
+                                    <td id="3" style="text-transform: uppercase;"></td>
+                                </tr>
+                            </table>
+                            <img id="userimg" src="" alt="student img">
+                        </div>
+                </div>
+            </div>
+            <div class="boxid">
+                <div class="card" id="center">
+                            <table id="t">
+                                <tr>
+                                    <th class="S">E-Mail</th>
+                                    <th id="4"></th>
+                                </tr>
+                                <tr>
+                                    <td  class="S" >Permanent Address</td>
+                                    <td id="8"></td>
+                                </tr>
+                                <br>
+                                <tr >
+                                    <td class="S" >Student Contact No.</td>
+                                    <td id="6"></td>
+                                </tr>
+                                <tr >
+                                    <td  class="S">F/M E-Mail</td>
+                                    <td id="5"></td>
+                                </tr>
+                                <tr >
+                                    <td  class="S">Emergency No.</td>
+                                    <td id="7"></td>
+                                </tr>
+                                <tr >
+                                    <td  class="S">Blood Group</td>
+                                    <td id="10"></td>
+                                </tr>
+                            </table>
+                            <div id="barbox">
+                                <img id="bar">
+                            </div>
+                            <p id="warn">Instrunctions:<br>
+                            1. The Identity card is Non Transferable.<br>
+                            2. If lost / found please return the identiy card to Dean Students Welfare Office Prabha Bhawan MNIT Jaipur - 302017<br>
+                            </p>
+                            <h6 id="warn" style="text-align: center;">Website: www.github.com www.linkedin.com</h6>
+                </div>
+            </div>
+    </div>
+    
+    <script>
+        let b = localStorage.getItem('data');
+        JsBarcode("#bar", b.split(',')[1]); 
+    </script>
+    <script src="resultjs.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID CARD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div">
+        <div id="title-form">
+            <h1>ID Card Generator</h1>
+        </div>
+            <form id="form">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+
+                <label for="IDno">ID no.</label>
+                <input type="text" id="IDno" required>
+
+                <label for="fathername">Father's Name</label>
+                <input type="text" id="fathername" required>
+
+        
+                <label for="dob">Date Of Birth</label>
+                <input type="date" id="dob" required>
+                
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" required>
+                <label for="pemail">Father/Mother E-Mail</label>
+                <input type="pemail" id="pemail" required>
+                
+                
+                <label for="phone">Contact Number</label>
+                <input type="number" id="phone" required>
+                
+                <label for="pphone">Emergency Number</label>
+                <input type="number" id="pphone" required>
+
+                <label for="add">Permanent Addrees</label>
+                <input type="text" id="add" required>
+
+
+                <label for="branch">Branch</label>
+                <select id="branch" required>
+                    <option value="Artificial Intelligence and Data Engineering">Artificial Intelligence and Data Engineering</option>
+                    <option value="Chemical Engineering">Chemical Engineering</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Metallurgical and Materials Engineering">Metallurgical and Materials Engineering</option>
+                </select>
+
+                <label for="blood">Blood Group</label>
+                <select id="blood" required>
+                    <option value="O-">O Negative</option>
+                    <option value="O+">O Positive</option>
+                    <option value="A-">A Negative</option>
+                    <option value="A+">A Positive</option>
+                    <option value="B-">B Negative</option>
+                    <option value="B+">B Positive</option>
+                    <option value="AB-">AB Negative</option>
+                    <option value="AB+">AB Positive</option>
+                </select>
+
+                <label for="programme">Programme</label>
+                <select id="programme" required>
+                    <option value="b.tech">B.Tech</option>
+                    <option value="b.e">B.E</option>
+                    <option value="b.arch">B.Arch</option>
+                </select>
+
+                <label for="img">Passport-Size Photo</label>
+                <input type="file" id="img" placeholder="Image URL only" accept="Image/jpeg , Image/png">
+
+                <button class="hover" type="reset">Reset</button>
+                <a class="hover" href="result.html" target="_blank"><button class="hover" type="button" onclick="generate()">Generate</button></a>
+            </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
